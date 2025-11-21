@@ -3,7 +3,7 @@ import { GoogleGenAI, Type } from "@google/genai";
 import { MissionData, StageType } from "../types";
 
 const getClient = () => {
-  const apiKey = process.env.API_KEY;
+  const apiKey = import.meta.env.VITE_API_KEY;
   if (!apiKey) return null;
   return new GoogleGenAI({ apiKey });
 };
