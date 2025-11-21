@@ -14,6 +14,7 @@ import {
   WEAPON_STATS,
   MISSILE_LIFETIME
 } from '../constants';
+import { loadSprites, SpriteMap, SpriteKey } from '../services/assetLoader';
 
 interface GameCanvasProps {
   gameState: GameState;
@@ -73,12 +74,32 @@ export const GameCanvas: React.FC<GameCanvasProps> = ({
   const itemsRef = useRef<Item[]>([]);
   const particlesRef = useRef<Particle[]>([]);
   const obstaclesRef = useRef<Obstacle[]>([]);
+  const spritesRef = useRef<SpriteMap>({});
   
   // Input State
   const keysRef = useRef<{ [key: string]: boolean }>({});
   const touchRef = useRef<{ active: boolean; x: number; y: number } | null>(null);
 
   // --- Helpers ---
+
+  const getEnemySpriteKey = (enemy: Enemy): SpriteKey | null => {
+    switch (enemy.type) {
+      case 'scout': return 'enemyScout';
+      case 'fighter': return 'enemyFighter';
+      case 'tank': return 'enemyTank';
+      case 'boss': return 'enemyBoss';
+      case 'turret': return 'enemyTurret';
+      default: return null;
+    }
+  };
+
+  const getObstacleSpriteKey = (obstacle: Obstacle): SpriteKey | null => {
+    switch (obstacle.type) {
+      case 'rock': return 'obstacleRock';
+      case 'wall': return 'obstacleWall';
+      default: return null;
+    }
+  };
 
   const spawnItem = (x: number, y: number, guaranteed: boolean = false) => {
     // 50% chance to drop item normally, or guaranteed
@@ -853,38 +874,46 @@ export const GameCanvas: React.FC<GameCanvasProps> = ({
       ctx.save();
       ctx.translate(p.pos.x, p.pos.y);
       
-      if (Date.now() < p.invulnerableUntil && Math.floor(Date.now() / 100) % 2 === 0) {
-          ctx.globalAlpha = 0.5;
+      const isBlinking = Date.now() < p.invulnerableUntil && Math.floor(Date.now() / 100) % 2 === 0;
+      if (isBlinking) {
+          ctx.globalAlpha = 0.6;
       }
 
-      const flameLen = Math.random() * 20 + 10;
+      // Thruster
+      const flameLen = Math.random() * 18 + 12;
       ctx.fillStyle = '#ffaa00';
       ctx.shadowBlur = 15;
       ctx.shadowColor = '#ffaa00';
       ctx.beginPath();
-      ctx.moveTo(0, p.height / 2 - 5);
+      ctx.moveTo(-8, p.height / 2 - 5);
       ctx.lineTo(-flameLen, p.height / 2);
-      ctx.lineTo(0, p.height / 2 + 5);
+      ctx.lineTo(-8, p.height / 2 + 5);
       ctx.fill();
-      
-      ctx.shadowBlur = 10;
-      ctx.shadowColor = p.color;
-      ctx.fillStyle = p.color;
-      
-      ctx.beginPath();
-      ctx.moveTo(p.width, p.height / 2);
-      ctx.lineTo(0, 0);
-      ctx.lineTo(10, p.height / 2);
-      ctx.lineTo(0, p.height);
-      ctx.closePath();
-      ctx.fill();
+      ctx.shadowBlur = 0;
 
-      ctx.fillStyle = '#ffffff';
-      ctx.beginPath();
-      ctx.moveTo(p.width - 10, p.height/2);
-      ctx.lineTo(p.width - 20, p.height/2 - 3);
-      ctx.lineTo(p.width - 20, p.height/2 + 3);
-      ctx.fill();
+      const shipSprite = spritesRef.current.player;
+      if (shipSprite) {
+          ctx.drawImage(shipSprite, 0, 0, p.width, p.height);
+      } else {
+          ctx.shadowBlur = 10;
+          ctx.shadowColor = p.color;
+          ctx.fillStyle = p.color;
+          
+          ctx.beginPath();
+          ctx.moveTo(p.width, p.height / 2);
+          ctx.lineTo(0, 0);
+          ctx.lineTo(10, p.height / 2);
+          ctx.lineTo(0, p.height);
+          ctx.closePath();
+          ctx.fill();
+
+          ctx.fillStyle = '#ffffff';
+          ctx.beginPath();
+          ctx.moveTo(p.width - 10, p.height/2);
+          ctx.lineTo(p.width - 20, p.height/2 - 3);
+          ctx.lineTo(p.width - 20, p.height/2 + 3);
+          ctx.fill();
+      }
 
       if (p.bits > 0) {
           const bitSpacing = 40;
@@ -921,12 +950,19 @@ export const GameCanvas: React.FC<GameCanvasProps> = ({
   const drawEnemy = (ctx: CanvasRenderingContext2D, e: Enemy) => {
       ctx.save();
       ctx.translate(e.pos.x, e.pos.y);
-      
-      ctx.shadowBlur = 10;
-      ctx.shadowColor = e.color;
-      ctx.fillStyle = e.color;
-      
-      if (e.type === 'boss') {
+
+      const spriteKey = getEnemySpriteKey(e);
+      const sprite = spriteKey ? spritesRef.current[spriteKey] : null;
+
+      if (sprite) {
+          ctx.shadowBlur = 12;
+          ctx.shadowColor = e.color;
+          ctx.drawImage(sprite, 0, 0, e.width, e.height);
+          ctx.shadowBlur = 0;
+      } else if (e.type === 'boss') {
+          ctx.shadowBlur = 10;
+          ctx.shadowColor = e.color;
+          ctx.fillStyle = e.color;
           ctx.translate(e.width/2, e.height/2);
           
           ctx.save();
@@ -950,12 +986,6 @@ export const GameCanvas: React.FC<GameCanvasProps> = ({
           ctx.fill();
           
           ctx.translate(-e.width/2, -e.height/2);
-          const hpPercent = e.hp / e.maxHp;
-          ctx.fillStyle = '#550000';
-          ctx.fillRect(0, -20, e.width, 8);
-          ctx.fillStyle = '#ff0000';
-          ctx.fillRect(0, -20, e.width * hpPercent, 8);
-
       } else if (e.type === 'turret') {
           ctx.fillStyle = '#888';
           ctx.beginPath();
@@ -965,17 +995,10 @@ export const GameCanvas: React.FC<GameCanvasProps> = ({
           ctx.beginPath();
           ctx.arc(20, 20, 10, 0, Math.PI*2);
           ctx.fill();
-          const dx = playerRef.current.pos.x - e.pos.x;
-          const dy = playerRef.current.pos.y - e.pos.y;
-          const angle = Math.atan2(dy, dx);
-          ctx.save();
-          ctx.translate(20, 20);
-          ctx.rotate(angle);
-          ctx.fillStyle = '#aaa';
-          ctx.fillRect(0, -3, 25, 6);
-          ctx.restore();
-
       } else if (e.type === 'tank') {
+          ctx.shadowBlur = 10;
+          ctx.shadowColor = e.color;
+          ctx.fillStyle = e.color;
           ctx.beginPath();
           ctx.moveTo(10, 0);
           ctx.lineTo(e.width-10, 0);
@@ -987,8 +1010,10 @@ export const GameCanvas: React.FC<GameCanvasProps> = ({
           ctx.fill();
           ctx.fillStyle = 'rgba(0,0,0,0.3)';
           ctx.fillRect(15, 15, e.width-30, e.height-30);
-
       } else if (e.type === 'fighter') {
+          ctx.shadowBlur = 10;
+          ctx.shadowColor = e.color;
+          ctx.fillStyle = e.color;
           ctx.beginPath();
           ctx.moveTo(e.width, e.height/2);
           ctx.lineTo(0, 0);
@@ -996,14 +1021,37 @@ export const GameCanvas: React.FC<GameCanvasProps> = ({
           ctx.lineTo(0, e.height);
           ctx.closePath();
           ctx.fill();
-
       } else {
+          ctx.shadowBlur = 10;
+          ctx.shadowColor = e.color;
+          ctx.fillStyle = e.color;
           ctx.beginPath();
           ctx.moveTo(e.width, e.height/2);
           ctx.lineTo(0, e.height/4);
           ctx.lineTo(0, e.height*0.75);
           ctx.closePath();
           ctx.fill();
+      }
+
+      if (e.type === 'boss') {
+          const hpPercent = e.hp / e.maxHp;
+          ctx.shadowBlur = 0;
+          ctx.fillStyle = '#550000';
+          ctx.fillRect(0, -20, e.width, 8);
+          ctx.fillStyle = '#ff0000';
+          ctx.fillRect(0, -20, e.width * hpPercent, 8);
+      }
+
+      if (e.type === 'turret') {
+          const dx = playerRef.current.pos.x - e.pos.x;
+          const dy = playerRef.current.pos.y - e.pos.y;
+          const angle = Math.atan2(dy, dx);
+          ctx.save();
+          ctx.translate(e.width / 2, e.height / 2);
+          ctx.rotate(angle);
+          ctx.fillStyle = '#aaa';
+          ctx.fillRect(0, -3, 25, 6);
+          ctx.restore();
       }
       ctx.restore();
   };
@@ -1055,9 +1103,17 @@ export const GameCanvas: React.FC<GameCanvasProps> = ({
   const drawObstacle = (ctx: CanvasRenderingContext2D, o: Obstacle) => {
       ctx.save();
       ctx.translate(o.pos.x, o.pos.y);
-      ctx.fillStyle = o.color;
-      
-      if (o.type === 'rock') {
+
+      const spriteKey = getObstacleSpriteKey(o);
+      const sprite = spriteKey ? spritesRef.current[spriteKey] : null;
+
+      if (sprite) {
+          ctx.shadowBlur = 4;
+          ctx.shadowColor = '#00000055';
+          ctx.drawImage(sprite, 0, 0, o.width, o.height);
+          ctx.shadowBlur = 0;
+      } else if (o.type === 'rock') {
+          ctx.fillStyle = o.color;
           ctx.beginPath();
           const r = o.width/2;
           ctx.translate(r, r);
@@ -1075,8 +1131,8 @@ export const GameCanvas: React.FC<GameCanvasProps> = ({
           ctx.beginPath();
           ctx.arc(-5, -5, r/4, 0, Math.PI*2);
           ctx.fill();
-
       } else {
+          ctx.fillStyle = o.color;
           ctx.fillRect(0, 0, o.width, o.height);
           ctx.strokeStyle = '#666';
           ctx.lineWidth = 2;
@@ -1205,6 +1261,17 @@ export const GameCanvas: React.FC<GameCanvasProps> = ({
 
   const scoreRef = useRef(0);
   useEffect(() => { scoreRef.current = score; }, [score]);
+
+  useEffect(() => {
+    let mounted = true;
+    loadSprites()
+      .then(map => {
+        if (mounted) {
+          spritesRef.current = map;
+        }
+      });
+    return () => { mounted = false; };
+  }, []);
 
   useEffect(() => {
     const handleResize = () => {
