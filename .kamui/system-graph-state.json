@@ -1,0 +1,1316 @@
+{
+  "schemaVersion": 1,
+  "projectPath": "C:/workspaces/Nebula-Striker",
+  "projectRootName": "Nebula-Striker",
+  "graphRenderingMode": "multi-agent",
+  "linkDisplayMode": "all",
+  "graphStats": {
+    "totalNodes": 11,
+    "folders": 3,
+    "files": 8,
+    "images": 0,
+    "videos": 0,
+    "audio": 0,
+    "code": 2,
+    "text": 1,
+    "html": 1,
+    "yaml": 0,
+    "json": 4,
+    "other": 0,
+    "totalLines": 0,
+    "maxLines": 0
+  },
+  "directoryTree": {
+    "name": "Nebula-Striker",
+    "type": "directory",
+    "path": "Nebula-Striker",
+    "children": [
+      {
+        "name": "public",
+        "type": "directory",
+        "path": "public",
+        "children": []
+      },
+      {
+        "name": "src",
+        "type": "directory",
+        "path": "src",
+        "children": [
+          {
+            "name": "App.tsx",
+            "type": "file",
+            "path": "src\\App.tsx"
+          },
+          {
+            "name": "main.tsx",
+            "type": "file",
+            "path": "src\\main.tsx"
+          }
+        ]
+      },
+      {
+        "name": "index.html",
+        "type": "file",
+        "path": "index.html"
+      },
+      {
+        "name": "metadata.json",
+        "type": "file",
+        "path": "metadata.json"
+      },
+      {
+        "name": "package-lock.json",
+        "type": "file",
+        "path": "package-lock.json"
+      },
+      {
+        "name": "package.json",
+        "type": "file",
+        "path": "package.json"
+      },
+      {
+        "name": "README.md",
+        "type": "file",
+        "path": "README.md"
+      },
+      {
+        "name": "tsconfig.json",
+        "type": "file",
+        "path": "tsconfig.json"
+      }
+    ]
+  },
+  "graphData": {
+    "nodes": [
+      {
+        "id": "Nebula-Striker",
+        "name": "Nebula-Striker",
+        "path": "Nebula-Striker",
+        "type": "directory",
+        "lines": 0,
+        "val": 14,
+        "color": "#2c3038",
+        "baseColor": "#4ec9b0",
+        "originalColor": "#4ec9b0",
+        "defaultGlow": 0.18,
+        "glowIntensity": 0.18,
+        "highlighted": false,
+        "parentPath": null,
+        "childFileCount": 6
+      },
+      {
+        "id": "Nebula-Striker/public",
+        "name": "public",
+        "path": "Nebula-Striker/public",
+        "type": "directory",
+        "lines": 0,
+        "val": 14,
+        "color": "#2c3038",
+        "baseColor": "#4ec9b0",
+        "originalColor": "#4ec9b0",
+        "defaultGlow": 0.18,
+        "glowIntensity": 0.18,
+        "highlighted": false,
+        "parentPath": "Nebula-Striker",
+        "childFileCount": 0
+      },
+      {
+        "id": "Nebula-Striker/src",
+        "name": "src",
+        "path": "Nebula-Striker/src",
+        "type": "directory",
+        "lines": 0,
+        "val": 14,
+        "color": "#2c3038",
+        "baseColor": "#4ec9b0",
+        "originalColor": "#4ec9b0",
+        "defaultGlow": 0.18,
+        "glowIntensity": 0.18,
+        "highlighted": false,
+        "parentPath": "Nebula-Striker",
+        "childFileCount": 2
+      },
+      {
+        "id": "Nebula-Striker/src/App.tsx",
+        "name": "App.tsx",
+        "path": "Nebula-Striker/src/App.tsx",
+        "type": "file",
+        "lines": 0,
+        "val": 6,
+        "color": "#2c3038",
+        "baseColor": "#61dafb",
+        "originalColor": "#61dafb",
+        "defaultGlow": 0.1,
+        "glowIntensity": 0.1,
+        "highlighted": false,
+        "parentPath": "Nebula-Striker/src",
+        "childFileCount": 0
+      },
+      {
+        "id": "Nebula-Striker/src/main.tsx",
+        "name": "main.tsx",
+        "path": "Nebula-Striker/src/main.tsx",
+        "type": "file",
+        "lines": 0,
+        "val": 6,
+        "color": "#2c3038",
+        "baseColor": "#61dafb",
+        "originalColor": "#61dafb",
+        "defaultGlow": 0.1,
+        "glowIntensity": 0.1,
+        "highlighted": false,
+        "parentPath": "Nebula-Striker/src",
+        "childFileCount": 0
+      },
+      {
+        "id": "Nebula-Striker/index.html",
+        "name": "index.html",
+        "path": "Nebula-Striker/index.html",
+        "type": "file",
+        "lines": 0,
+        "val": 6,
+        "color": "#2c3038",
+        "baseColor": "#e44d26",
+        "originalColor": "#e44d26",
+        "defaultGlow": 0.18,
+        "glowIntensity": 0.18,
+        "highlighted": false,
+        "parentPath": "Nebula-Striker",
+        "childFileCount": 0
+      },
+      {
+        "id": "Nebula-Striker/metadata.json",
+        "name": "metadata.json",
+        "path": "Nebula-Striker/metadata.json",
+        "type": "file",
+        "lines": 0,
+        "val": 6,
+        "color": "#2c3038",
+        "baseColor": "#8e44ad",
+        "originalColor": "#8e44ad",
+        "defaultGlow": 0.18,
+        "glowIntensity": 0.18,
+        "highlighted": false,
+        "parentPath": "Nebula-Striker",
+        "childFileCount": 0
+      },
+      {
+        "id": "Nebula-Striker/package-lock.json",
+        "name": "package-lock.json",
+        "path": "Nebula-Striker/package-lock.json",
+        "type": "file",
+        "lines": 0,
+        "val": 6,
+        "color": "#2c3038",
+        "baseColor": "#8e44ad",
+        "originalColor": "#8e44ad",
+        "defaultGlow": 0.18,
+        "glowIntensity": 0.18,
+        "highlighted": false,
+        "parentPath": "Nebula-Striker",
+        "childFileCount": 0
+      },
+      {
+        "id": "Nebula-Striker/package.json",
+        "name": "package.json",
+        "path": "Nebula-Striker/package.json",
+        "type": "file",
+        "lines": 0,
+        "val": 6,
+        "color": "#2c3038",
+        "baseColor": "#8e44ad",
+        "originalColor": "#8e44ad",
+        "defaultGlow": 0.18,
+        "glowIntensity": 0.18,
+        "highlighted": false,
+        "parentPath": "Nebula-Striker",
+        "childFileCount": 0
+      },
+      {
+        "id": "Nebula-Striker/README.md",
+        "name": "README.md",
+        "path": "Nebula-Striker/README.md",
+        "type": "file",
+        "lines": 0,
+        "val": 6,
+        "color": "#2c3038",
+        "baseColor": "#3498db",
+        "originalColor": "#3498db",
+        "defaultGlow": 0.18,
+        "glowIntensity": 0.18,
+        "highlighted": false,
+        "parentPath": "Nebula-Striker",
+        "childFileCount": 0
+      },
+      {
+        "id": "Nebula-Striker/tsconfig.json",
+        "name": "tsconfig.json",
+        "path": "Nebula-Striker/tsconfig.json",
+        "type": "file",
+        "lines": 0,
+        "val": 6,
+        "color": "#2c3038",
+        "baseColor": "#8e44ad",
+        "originalColor": "#8e44ad",
+        "defaultGlow": 0.18,
+        "glowIntensity": 0.18,
+        "highlighted": false,
+        "parentPath": "Nebula-Striker",
+        "childFileCount": 0
+      }
+    ],
+    "links": [
+      {
+        "source": "Nebula-Striker",
+        "target": "Nebula-Striker/public",
+        "type": "tree"
+      },
+      {
+        "source": "Nebula-Striker",
+        "target": "Nebula-Striker/src",
+        "type": "tree"
+      },
+      {
+        "source": "Nebula-Striker/src",
+        "target": "Nebula-Striker/src/App.tsx",
+        "type": "tree"
+      },
+      {
+        "source": "Nebula-Striker/src",
+        "target": "Nebula-Striker/src/main.tsx",
+        "type": "tree"
+      },
+      {
+        "source": "Nebula-Striker",
+        "target": "Nebula-Striker/index.html",
+        "type": "tree"
+      },
+      {
+        "source": "Nebula-Striker",
+        "target": "Nebula-Striker/metadata.json",
+        "type": "tree"
+      },
+      {
+        "source": "Nebula-Striker",
+        "target": "Nebula-Striker/package-lock.json",
+        "type": "tree"
+      },
+      {
+        "source": "Nebula-Striker",
+        "target": "Nebula-Striker/package.json",
+        "type": "tree"
+      },
+      {
+        "source": "Nebula-Striker",
+        "target": "Nebula-Striker/README.md",
+        "type": "tree"
+      },
+      {
+        "source": "Nebula-Striker",
+        "target": "Nebula-Striker/tsconfig.json",
+        "type": "tree"
+      }
+    ]
+  },
+  "trackedFiles": [
+    ".env.example",
+    ".gitignore",
+    ".kamui/tasks-state.json",
+    "README.md",
+    "index.html",
+    "metadata.json",
+    "package-lock.json",
+    "package.json",
+    "public/sprites/enemy-boss.png",
+    "public/sprites/enemy-fighter.png",
+    "public/sprites/enemy-scout.png",
+    "public/sprites/enemy-tank.png",
+    "public/sprites/enemy-turret.png",
+    "public/sprites/obstacle-rock.png",
+    "public/sprites/obstacle-wall.png",
+    "public/sprites/player-ship.png",
+    "src/App.tsx",
+    "src/components/GameCanvas.tsx",
+    "src/components/Starfield.tsx",
+    "src/constants.ts",
+    "src/main.tsx",
+    "src/services/assetLoader.ts",
+    "src/services/geminiService.ts",
+    "src/types.ts",
+    "src/vite-env.d.ts",
+    "tsconfig.json",
+    "vite.config.ts"
+  ],
+  "uiState": {
+    "expandedDirs": [
+      "Nebula-Striker",
+      "task-1763744182659-3613cb",
+      "task-1763744189523-763818",
+      "task-1763744187225-d8b28c",
+      "task-1763744184939-55f605",
+      "task-1763744180231-0465fe",
+      "Nebula-Striker/Nebula-Striker",
+      "Nebula-Striker/public",
+      "Nebula-Striker/Nebula-Striker/public",
+      "Nebula-Striker/public/sprites",
+      "Nebula-Striker/Nebula-Striker/public/sprites",
+      "Nebula-Striker/src",
+      "Nebula-Striker/Nebula-Striker/src",
+      "Nebula-Striker/src/components",
+      "Nebula-Striker/Nebula-Striker/src/components",
+      "Nebula-Striker/src/services",
+      "Nebula-Striker/Nebula-Striker/src/services"
+    ],
+    "selectedPath": null
+  },
+  "directoryTreeMeta": {
+    "mode": "full",
+    "maxDepthApplied": 10,
+    "maxEntriesPerDirectory": 0,
+    "isPartial": false
+  },
+  "gitHistoryMeta": {
+    "mode": "full",
+    "isPartial": false,
+    "branchPulse": null
+  },
+  "gitHistoryState": {
+    "selectedTimelineIndex": 1,
+    "activeCommitHash": null,
+    "entries": [
+      {
+        "type": "live",
+        "label": "現在のコードベース",
+        "files": [],
+        "branch": "task/task-1763744180231-0465fe",
+        "targetCommitHash": "476d29b8830da3b0181a8a79cb4b26536d470438",
+        "worktreePath": "C:/workspaces/Nebula-Striker/.worktrees/task-1763744180231-0465fe",
+        "timestamp": 1763746138348,
+        "lane": 0,
+        "branchLabel": "task/task-1763744180231-0465fe",
+        "branchTags": [
+          "task/task-1763744180231-0465fe"
+        ],
+        "isDefaultWorktree": true,
+        "branchColor": "#4f85e8",
+        "index": 0
+      },
+      {
+        "type": "unstaged",
+        "label": "未ステージ [main] (4)",
+        "files": [
+          ".kamui/gantte/test.yaml",
+          ".kamui/model-versions-cache.json",
+          ".kamui/prompt/merge-prompt.txt",
+          ".kamui/system-graph-state.json"
+        ],
+        "branch": "main",
+        "targetCommitHash": "cadb8dce08e23e3880fd2c808b77f1c55dd57769",
+        "worktreePath": "C:/workspaces/Nebula-Striker",
+        "timestamp": 1763746137396,
+        "sortOrder": 0,
+        "lane": 0,
+        "branchColor": "#4f85e8",
+        "index": 1
+      },
+      {
+        "type": "commit",
+        "label": "Merge branch 'task/task-1763744189523-763818'",
+        "commit": {
+          "hash": "cadb8dce08e23e3880fd2c808b77f1c55dd57769",
+          "subject": "Merge branch 'task/task-1763744189523-763818'",
+          "author": "yuya.fujita",
+          "timestamp": 1763745978,
+          "parents": [
+            "f98f5a2383d95ecc2a4605be47cb8b05f1e36385",
+            "174b8bf92c9de935182b70126d0e475eac7ba591"
+          ],
+          "parent": "f98f5a2383d95ecc2a4605be47cb8b05f1e36385",
+          "refs": "origin/main, origin/HEAD, main",
+          "branches": [
+            "origin/main",
+            "origin/HEAD",
+            "main",
+            "task/task-1763744189523-763818"
+          ]
+        },
+        "commitHash": "cadb8dce08e23e3880fd2c808b77f1c55dd57769",
+        "lane": 0,
+        "parentLinks": [
+          {
+            "hash": "f98f5a2383d95ecc2a4605be47cb8b05f1e36385",
+            "lane": 0
+          },
+          {
+            "hash": "174b8bf92c9de935182b70126d0e475eac7ba591",
+            "lane": 1
+          }
+        ],
+        "primaryBranchName": "main",
+        "branchColor": "#4f85e8",
+        "branchTags": [
+          "main",
+          "task/task-1763744189523-763818"
+        ],
+        "worktrees": [
+          {
+            "path": "C:/workspaces/Nebula-Striker",
+            "head": "cadb8dce08e23e3880fd2c808b77f1c55dd57769",
+            "branch": "main",
+            "isMerged": false,
+            "mergeCommitHash": null,
+            "status": {
+              "staged": [],
+              "unstaged": [],
+              "untracked": [
+                {
+                  "path": ".kamui/gantte/test.yaml",
+                  "status": "untracked",
+                  "rawPath": ".kamui/gantte/test.yaml",
+                  "timestamp": 1763746137396
+                },
+                {
+                  "path": ".kamui/model-versions-cache.json",
+                  "status": "untracked",
+                  "rawPath": ".kamui/model-versions-cache.json",
+                  "timestamp": 1763746137396
+                },
+                {
+                  "path": ".kamui/prompt/merge-prompt.txt",
+                  "status": "untracked",
+                  "rawPath": ".kamui/prompt/merge-prompt.txt",
+                  "timestamp": 1763746137396
+                },
+                {
+                  "path": ".kamui/system-graph-state.json",
+                  "status": "untracked",
+                  "rawPath": ".kamui/system-graph-state.json",
+                  "timestamp": 1763746137396
+                },
+                {
+                  "path": ".worktrees/task-1763744180231-0465fe/",
+                  "status": "untracked",
+                  "rawPath": ".worktrees/task-1763744180231-0465fe/",
+                  "timestamp": 1763746137396
+                },
+                {
+                  "path": ".worktrees/task-1763744182659-3613cb/",
+                  "status": "untracked",
+                  "rawPath": ".worktrees/task-1763744182659-3613cb/",
+                  "timestamp": 1763746137396
+                },
+                {
+                  "path": ".worktrees/task-1763744184939-55f605/",
+                  "status": "untracked",
+                  "rawPath": ".worktrees/task-1763744184939-55f605/",
+                  "timestamp": 1763746137396
+                },
+                {
+                  "path": ".worktrees/task-1763744187225-d8b28c/",
+                  "status": "untracked",
+                  "rawPath": ".worktrees/task-1763744187225-d8b28c/",
+                  "timestamp": 1763746137396
+                },
+                {
+                  "path": ".worktrees/task-1763744189523-763818/",
+                  "status": "untracked",
+                  "rawPath": ".worktrees/task-1763744189523-763818/",
+                  "timestamp": 1763746137396
+                }
+              ],
+              "capturedAt": 1763746137396
+            },
+            "normalizedPath": "C:/workspaces/Nebula-Striker",
+            "lane": 0
+          }
+        ],
+        "index": 2
+      },
+      {
+        "type": "commit",
+        "label": "Update task state",
+        "commit": {
+          "hash": "f98f5a2383d95ecc2a4605be47cb8b05f1e36385",
+          "subject": "Update task state",
+          "author": "yuya.fujita",
+          "timestamp": 1763745973,
+          "parents": [
+            "476d29b8830da3b0181a8a79cb4b26536d470438"
+          ],
+          "parent": "476d29b8830da3b0181a8a79cb4b26536d470438",
+          "refs": "",
+          "branches": [
+            "task/task-1763744189523-763818",
+            "main"
+          ]
+        },
+        "commitHash": "f98f5a2383d95ecc2a4605be47cb8b05f1e36385",
+        "lane": 0,
+        "parentLinks": [
+          {
+            "hash": "476d29b8830da3b0181a8a79cb4b26536d470438",
+            "lane": 0
+          }
+        ],
+        "primaryBranchName": "main",
+        "branchColor": "#4f85e8",
+        "branchTags": [],
+        "index": 3
+      },
+      {
+        "type": "commit",
+        "label": "Add sprite assets and image rendering",
+        "commit": {
+          "hash": "174b8bf92c9de935182b70126d0e475eac7ba591",
+          "subject": "Add sprite assets and image rendering",
+          "author": "yuya.fujita",
+          "timestamp": 1763745843,
+          "parents": [
+            "476d29b8830da3b0181a8a79cb4b26536d470438"
+          ],
+          "parent": "476d29b8830da3b0181a8a79cb4b26536d470438",
+          "refs": "task/task-1763744189523-763818",
+          "branches": [
+            "task/task-1763744189523-763818",
+            "main"
+          ]
+        },
+        "commitHash": "174b8bf92c9de935182b70126d0e475eac7ba591",
+        "lane": 0,
+        "parentLinks": [
+          {
+            "hash": "476d29b8830da3b0181a8a79cb4b26536d470438",
+            "lane": 0
+          }
+        ],
+        "primaryBranchName": "main",
+        "branchColor": "#4f85e8",
+        "branchTags": [],
+        "worktrees": [
+          {
+            "path": "C:/workspaces/Nebula-Striker/.worktrees/task-1763744189523-763818",
+            "head": "174b8bf92c9de935182b70126d0e475eac7ba591",
+            "branch": "task/task-1763744189523-763818",
+            "isMerged": true,
+            "mergeCommitHash": "cadb8dce08e23e3880fd2c808b77f1c55dd57769",
+            "status": {
+              "staged": [],
+              "unstaged": [],
+              "untracked": [],
+              "capturedAt": 1763746137515
+            },
+            "normalizedPath": "C:/workspaces/Nebula-Striker/.worktrees/task-1763744189523-763818",
+            "lane": 1
+          }
+        ],
+        "index": 4
+      },
+      {
+        "type": "unstaged",
+        "label": "未ステージ (6)",
+        "files": [
+          "public/sprites/enemy-boss.png",
+          "public/sprites/enemy-fighter.png",
+          "public/sprites/enemy-scout.png",
+          "public/sprites/enemy-tank.png",
+          "public/sprites/enemy-turret.png",
+          "public/sprites/player.png"
+        ],
+        "branch": "task/task-1763744180231-0465fe",
+        "targetCommitHash": "476d29b8830da3b0181a8a79cb4b26536d470438",
+        "worktreePath": "C:/workspaces/Nebula-Striker/.worktrees/task-1763744180231-0465fe",
+        "timestamp": 1763746138348,
+        "sortOrder": 0,
+        "lane": 2,
+        "branchColor": "#e84f7f",
+        "index": 5
+      },
+      {
+        "type": "staged",
+        "label": "ステージ済み (1)",
+        "files": [
+          "rc/components/GameCanvas.tsx"
+        ],
+        "branch": "task/task-1763744180231-0465fe",
+        "targetCommitHash": "476d29b8830da3b0181a8a79cb4b26536d470438",
+        "worktreePath": "C:/workspaces/Nebula-Striker/.worktrees/task-1763744180231-0465fe",
+        "timestamp": 1763746138348,
+        "sortOrder": 1,
+        "lane": 2,
+        "branchColor": "#e84f7f",
+        "index": 6
+      },
+      {
+        "type": "unstaged",
+        "label": "未ステージ [task/task-1763744182659-3613cb] (8)",
+        "files": [
+          ".kamui/tasks-state.json",
+          "public/enemy_boss.png",
+          "public/enemy_fighter.png",
+          "public/enemy_scout.png",
+          "public/enemy_tank.png",
+          "public/enemy_turret.png",
+          "public/player.png",
+          "src/services/imageLoader.ts"
+        ],
+        "branch": "task/task-1763744182659-3613cb",
+        "targetCommitHash": "476d29b8830da3b0181a8a79cb4b26536d470438",
+        "worktreePath": "C:/workspaces/Nebula-Striker/.worktrees/task-1763744182659-3613cb",
+        "timestamp": 1763746137458,
+        "sortOrder": 0,
+        "lane": 3,
+        "branchColor": "#4fe8b8",
+        "index": 7
+      },
+      {
+        "type": "staged",
+        "label": "ステージ済み [task/task-1763744182659-3613cb] (1)",
+        "files": [
+          "rc/components/GameCanvas.tsx"
+        ],
+        "branch": "task/task-1763744182659-3613cb",
+        "targetCommitHash": "476d29b8830da3b0181a8a79cb4b26536d470438",
+        "worktreePath": "C:/workspaces/Nebula-Striker/.worktrees/task-1763744182659-3613cb",
+        "timestamp": 1763746137458,
+        "sortOrder": 1,
+        "lane": 3,
+        "branchColor": "#4fe8b8",
+        "index": 8
+      },
+      {
+        "type": "unstaged",
+        "label": "未ステージ [task/task-1763744184939-55f605] (1)",
+        "files": [
+          "src/services/imageLoader.ts"
+        ],
+        "branch": "task/task-1763744184939-55f605",
+        "targetCommitHash": "476d29b8830da3b0181a8a79cb4b26536d470438",
+        "worktreePath": "C:/workspaces/Nebula-Striker/.worktrees/task-1763744184939-55f605",
+        "timestamp": 1763746137455,
+        "sortOrder": 0,
+        "lane": 4,
+        "branchColor": "#e8a84f",
+        "index": 9
+      },
+      {
+        "type": "staged",
+        "label": "ステージ済み [task/task-1763744184939-55f605] (1)",
+        "files": [
+          "rc/components/GameCanvas.tsx"
+        ],
+        "branch": "task/task-1763744184939-55f605",
+        "targetCommitHash": "476d29b8830da3b0181a8a79cb4b26536d470438",
+        "worktreePath": "C:/workspaces/Nebula-Striker/.worktrees/task-1763744184939-55f605",
+        "timestamp": 1763746137455,
+        "sortOrder": 1,
+        "lane": 4,
+        "branchColor": "#e8a84f",
+        "index": 10
+      },
+      {
+        "type": "unstaged",
+        "label": "未ステージ [task/task-1763744187225-d8b28c] (7)",
+        "files": [
+          "public/enemy-boss.png",
+          "public/enemy-fighter.png",
+          "public/enemy-scout.png",
+          "public/enemy-tank.png",
+          "public/enemy-turret.png",
+          "public/player.png",
+          "src/services/assets.ts"
+        ],
+        "branch": "task/task-1763744187225-d8b28c",
+        "targetCommitHash": "476d29b8830da3b0181a8a79cb4b26536d470438",
+        "worktreePath": "C:/workspaces/Nebula-Striker/.worktrees/task-1763744187225-d8b28c",
+        "timestamp": 1763746137512,
+        "sortOrder": 0,
+        "lane": 5,
+        "branchColor": "#b84fe8",
+        "index": 11
+      },
+      {
+        "type": "staged",
+        "label": "ステージ済み [task/task-1763744187225-d8b28c] (1)",
+        "files": [
+          "rc/components/GameCanvas.tsx"
+        ],
+        "branch": "task/task-1763744187225-d8b28c",
+        "targetCommitHash": "476d29b8830da3b0181a8a79cb4b26536d470438",
+        "worktreePath": "C:/workspaces/Nebula-Striker/.worktrees/task-1763744187225-d8b28c",
+        "timestamp": 1763746137512,
+        "sortOrder": 1,
+        "lane": 5,
+        "branchColor": "#b84fe8",
+        "index": 12
+      },
+      {
+        "type": "anchor",
+        "label": "[作業中] CodexCLI1: 今プロジェクトフォルダに指定しているディレ…",
+        "branch": "task/task-1763744180231-0465fe",
+        "worktreePath": "C:/workspaces/Nebula-Striker/.worktrees/task-1763744180231-0465fe",
+        "parentCommitHash": "476d29b8830da3b0181a8a79cb4b26536d470438",
+        "lane": 2,
+        "isMerged": false,
+        "mergeCommitHash": null,
+        "statusChildren": [
+          {
+            "type": "unstaged",
+            "label": "未ステージ (6)",
+            "files": [
+              "public/sprites/enemy-boss.png",
+              "public/sprites/enemy-fighter.png",
+              "public/sprites/enemy-scout.png",
+              "public/sprites/enemy-tank.png",
+              "public/sprites/enemy-turret.png",
+              "public/sprites/player.png"
+            ],
+            "branch": "task/task-1763744180231-0465fe",
+            "targetCommitHash": "476d29b8830da3b0181a8a79cb4b26536d470438",
+            "worktreePath": "C:/workspaces/Nebula-Striker/.worktrees/task-1763744180231-0465fe",
+            "timestamp": 1763746138348,
+            "sortOrder": 0,
+            "lane": 2,
+            "branchColor": "#e84f7f",
+            "index": 5
+          },
+          {
+            "type": "staged",
+            "label": "ステージ済み (1)",
+            "files": [
+              "rc/components/GameCanvas.tsx"
+            ],
+            "branch": "task/task-1763744180231-0465fe",
+            "targetCommitHash": "476d29b8830da3b0181a8a79cb4b26536d470438",
+            "worktreePath": "C:/workspaces/Nebula-Striker/.worktrees/task-1763744180231-0465fe",
+            "timestamp": 1763746138348,
+            "sortOrder": 1,
+            "lane": 2,
+            "branchColor": "#e84f7f",
+            "index": 6
+          }
+        ],
+        "isDefaultWorktree": false,
+        "renderMode": "node",
+        "shouldHide": false,
+        "tagLabel": "task/task-1763744180231-0465fe",
+        "taskId": "task-1763744180231-0465fe",
+        "taskStatus": "working",
+        "taskStatusLabel": "作業中",
+        "taskName": "CodexCLI1: 今プロジェクトフォルダに指定しているディレクトリに格納されているゲームについてグラフィックの向上をしたい\n\n以下のアドバイスをもらったので自機体とか敵の画像をつくってグラフィックの向上を実行して\n\nグラフィックの画像化について\nこのプロジェクトは現在、Canvas の描画関数で敵や自機を図形で描画しています。画像ファイルを使用するには、以下の手順が必要です。\n\n1. 画像アセットの準備\npublic/ フォルダを作成し、画像ファイルを配置します：\n\n2. 画像読み込み用のユーティリティを作成\n3. GameCanvasで画像を使用\nGameCanvas.tsx の描画関数を変更：\n\n4. 推奨画像形式\n形式: PNG（透明背景対応）\nサイズ: 敵は 40-180px、自機は 40px × 20px 程度\n最適化: TinyPNG などで圧縮推奨\n5. Vite設定確認\nvite.config.ts で public フォルダが自動的に静的ファイルとして配信されます。\n\nこのアプローチにより、既存のゲームロジックを保つながらビジュアルを大幅に改善できます！",
+        "tooltip": "タスク: CodexCLI1: 今プロジェクトフォルダに指定しているディレクトリに格納されているゲームについてグラフィックの向上をしたい\n\n以下のアドバイスをもらったので自機体とか敵の画像をつくってグラフィックの向上を実行して\n\nグラフィックの画像化について\nこのプロジェクトは現在、Canvas の描画関数で敵や自機を図形で描画しています。画像ファイルを使用するには、以下の手順が必要です。\n\n1. 画像アセットの準備\npublic/ フォルダを作成し、画像ファイルを配置します：\n\n2. 画像読み込み用のユーティリティを作成\n3. GameCanvasで画像を使用\nGameCanvas.tsx の描画関数を変更：\n\n4. 推奨画像形式\n形式: PNG（透明背景対応）\nサイズ: 敵は 40-180px、自機は 40px × 20px 程度\n最適化: TinyPNG などで圧縮推奨\n5. Vite設定確認\nvite.config.ts で public フォルダが自動的に静的ファイルとして配信されます。\n\nこのアプローチにより、既存のゲームロジックを保つながらビジュアルを大幅に改善できます！\nステータス: 作業中\nID: task-1763744180231-0465fe\nBranch: task/task-1763744180231-0465fe\nWorktree: C:/workspaces/Nebula-Striker/.worktrees/task-1763744180231-0465fe",
+        "branchColor": "#e84f7f",
+        "index": 13
+      },
+      {
+        "type": "anchor",
+        "label": "[作業中] CodexCLI2: 今プロジェクトフォルダに指定しているディレ…",
+        "branch": "task/task-1763744182659-3613cb",
+        "worktreePath": "C:/workspaces/Nebula-Striker/.worktrees/task-1763744182659-3613cb",
+        "parentCommitHash": "476d29b8830da3b0181a8a79cb4b26536d470438",
+        "lane": 3,
+        "isMerged": false,
+        "mergeCommitHash": null,
+        "statusChildren": [
+          {
+            "type": "unstaged",
+            "label": "未ステージ [task/task-1763744182659-3613cb] (8)",
+            "files": [
+              ".kamui/tasks-state.json",
+              "public/enemy_boss.png",
+              "public/enemy_fighter.png",
+              "public/enemy_scout.png",
+              "public/enemy_tank.png",
+              "public/enemy_turret.png",
+              "public/player.png",
+              "src/services/imageLoader.ts"
+            ],
+            "branch": "task/task-1763744182659-3613cb",
+            "targetCommitHash": "476d29b8830da3b0181a8a79cb4b26536d470438",
+            "worktreePath": "C:/workspaces/Nebula-Striker/.worktrees/task-1763744182659-3613cb",
+            "timestamp": 1763746137458,
+            "sortOrder": 0,
+            "lane": 3,
+            "branchColor": "#4fe8b8",
+            "index": 7
+          },
+          {
+            "type": "staged",
+            "label": "ステージ済み [task/task-1763744182659-3613cb] (1)",
+            "files": [
+              "rc/components/GameCanvas.tsx"
+            ],
+            "branch": "task/task-1763744182659-3613cb",
+            "targetCommitHash": "476d29b8830da3b0181a8a79cb4b26536d470438",
+            "worktreePath": "C:/workspaces/Nebula-Striker/.worktrees/task-1763744182659-3613cb",
+            "timestamp": 1763746137458,
+            "sortOrder": 1,
+            "lane": 3,
+            "branchColor": "#4fe8b8",
+            "index": 8
+          }
+        ],
+        "isDefaultWorktree": false,
+        "renderMode": "node",
+        "shouldHide": false,
+        "tagLabel": "task/task-1763744182659-3613cb",
+        "taskId": "task-1763744182659-3613cb",
+        "taskStatus": "working",
+        "taskStatusLabel": "作業中",
+        "taskName": "CodexCLI2: 今プロジェクトフォルダに指定しているディレクトリに格納されているゲームについてグラフィックの向上をしたい\n\n以下のアドバイスをもらったので自機体とか敵の画像をつくってグラフィックの向上を実行して\n\nグラフィックの画像化について\nこのプロジェクトは現在、Canvas の描画関数で敵や自機を図形で描画しています。画像ファイルを使用するには、以下の手順が必要です。\n\n1. 画像アセットの準備\npublic/ フォルダを作成し、画像ファイルを配置します：\n\n2. 画像読み込み用のユーティリティを作成\n3. GameCanvasで画像を使用\nGameCanvas.tsx の描画関数を変更：\n\n4. 推奨画像形式\n形式: PNG（透明背景対応）\nサイズ: 敵は 40-180px、自機は 40px × 20px 程度\n最適化: TinyPNG などで圧縮推奨\n5. Vite設定確認\nvite.config.ts で public フォルダが自動的に静的ファイルとして配信されます。\n\nこのアプローチにより、既存のゲームロジックを保つながらビジュアルを大幅に改善できます！",
+        "tooltip": "タスク: CodexCLI2: 今プロジェクトフォルダに指定しているディレクトリに格納されているゲームについてグラフィックの向上をしたい\n\n以下のアドバイスをもらったので自機体とか敵の画像をつくってグラフィックの向上を実行して\n\nグラフィックの画像化について\nこのプロジェクトは現在、Canvas の描画関数で敵や自機を図形で描画しています。画像ファイルを使用するには、以下の手順が必要です。\n\n1. 画像アセットの準備\npublic/ フォルダを作成し、画像ファイルを配置します：\n\n2. 画像読み込み用のユーティリティを作成\n3. GameCanvasで画像を使用\nGameCanvas.tsx の描画関数を変更：\n\n4. 推奨画像形式\n形式: PNG（透明背景対応）\nサイズ: 敵は 40-180px、自機は 40px × 20px 程度\n最適化: TinyPNG などで圧縮推奨\n5. Vite設定確認\nvite.config.ts で public フォルダが自動的に静的ファイルとして配信されます。\n\nこのアプローチにより、既存のゲームロジックを保つながらビジュアルを大幅に改善できます！\nステータス: 作業中\nID: task-1763744182659-3613cb\nBranch: task/task-1763744182659-3613cb\nWorktree: C:/workspaces/Nebula-Striker/.worktrees/task-1763744182659-3613cb",
+        "branchColor": "#4fe8b8",
+        "index": 14
+      },
+      {
+        "type": "anchor",
+        "label": "[作業中] CodexCLI3: 今プロジェクトフォルダに指定しているディレ…",
+        "branch": "task/task-1763744184939-55f605",
+        "worktreePath": "C:/workspaces/Nebula-Striker/.worktrees/task-1763744184939-55f605",
+        "parentCommitHash": "476d29b8830da3b0181a8a79cb4b26536d470438",
+        "lane": 4,
+        "isMerged": false,
+        "mergeCommitHash": null,
+        "statusChildren": [
+          {
+            "type": "unstaged",
+            "label": "未ステージ [task/task-1763744184939-55f605] (1)",
+            "files": [
+              "src/services/imageLoader.ts"
+            ],
+            "branch": "task/task-1763744184939-55f605",
+            "targetCommitHash": "476d29b8830da3b0181a8a79cb4b26536d470438",
+            "worktreePath": "C:/workspaces/Nebula-Striker/.worktrees/task-1763744184939-55f605",
+            "timestamp": 1763746137455,
+            "sortOrder": 0,
+            "lane": 4,
+            "branchColor": "#e8a84f",
+            "index": 9
+          },
+          {
+            "type": "staged",
+            "label": "ステージ済み [task/task-1763744184939-55f605] (1)",
+            "files": [
+              "rc/components/GameCanvas.tsx"
+            ],
+            "branch": "task/task-1763744184939-55f605",
+            "targetCommitHash": "476d29b8830da3b0181a8a79cb4b26536d470438",
+            "worktreePath": "C:/workspaces/Nebula-Striker/.worktrees/task-1763744184939-55f605",
+            "timestamp": 1763746137455,
+            "sortOrder": 1,
+            "lane": 4,
+            "branchColor": "#e8a84f",
+            "index": 10
+          }
+        ],
+        "isDefaultWorktree": false,
+        "renderMode": "node",
+        "shouldHide": false,
+        "tagLabel": "task/task-1763744184939-55f605",
+        "taskId": "task-1763744184939-55f605",
+        "taskStatus": "working",
+        "taskStatusLabel": "作業中",
+        "taskName": "CodexCLI3: 今プロジェクトフォルダに指定しているディレクトリに格納されているゲームについてグラフィックの向上をしたい\n\n以下のアドバイスをもらったので自機体とか敵の画像をつくってグラフィックの向上を実行して\n\nグラフィックの画像化について\nこのプロジェクトは現在、Canvas の描画関数で敵や自機を図形で描画しています。画像ファイルを使用するには、以下の手順が必要です。\n\n1. 画像アセットの準備\npublic/ フォルダを作成し、画像ファイルを配置します：\n\n2. 画像読み込み用のユーティリティを作成\n3. GameCanvasで画像を使用\nGameCanvas.tsx の描画関数を変更：\n\n4. 推奨画像形式\n形式: PNG（透明背景対応）\nサイズ: 敵は 40-180px、自機は 40px × 20px 程度\n最適化: TinyPNG などで圧縮推奨\n5. Vite設定確認\nvite.config.ts で public フォルダが自動的に静的ファイルとして配信されます。\n\nこのアプローチにより、既存のゲームロジックを保つながらビジュアルを大幅に改善できます！",
+        "tooltip": "タスク: CodexCLI3: 今プロジェクトフォルダに指定しているディレクトリに格納されているゲームについてグラフィックの向上をしたい\n\n以下のアドバイスをもらったので自機体とか敵の画像をつくってグラフィックの向上を実行して\n\nグラフィックの画像化について\nこのプロジェクトは現在、Canvas の描画関数で敵や自機を図形で描画しています。画像ファイルを使用するには、以下の手順が必要です。\n\n1. 画像アセットの準備\npublic/ フォルダを作成し、画像ファイルを配置します：\n\n2. 画像読み込み用のユーティリティを作成\n3. GameCanvasで画像を使用\nGameCanvas.tsx の描画関数を変更：\n\n4. 推奨画像形式\n形式: PNG（透明背景対応）\nサイズ: 敵は 40-180px、自機は 40px × 20px 程度\n最適化: TinyPNG などで圧縮推奨\n5. Vite設定確認\nvite.config.ts で public フォルダが自動的に静的ファイルとして配信されます。\n\nこのアプローチにより、既存のゲームロジックを保つながらビジュアルを大幅に改善できます！\nステータス: 作業中\nID: task-1763744184939-55f605\nBranch: task/task-1763744184939-55f605\nWorktree: C:/workspaces/Nebula-Striker/.worktrees/task-1763744184939-55f605",
+        "branchColor": "#e8a84f",
+        "index": 15
+      },
+      {
+        "type": "anchor",
+        "label": "[作業中] CodexCLI4: 今プロジェクトフォルダに指定しているディレ…",
+        "branch": "task/task-1763744187225-d8b28c",
+        "worktreePath": "C:/workspaces/Nebula-Striker/.worktrees/task-1763744187225-d8b28c",
+        "parentCommitHash": "476d29b8830da3b0181a8a79cb4b26536d470438",
+        "lane": 5,
+        "isMerged": false,
+        "mergeCommitHash": null,
+        "statusChildren": [
+          {
+            "type": "unstaged",
+            "label": "未ステージ [task/task-1763744187225-d8b28c] (7)",
+            "files": [
+              "public/enemy-boss.png",
+              "public/enemy-fighter.png",
+              "public/enemy-scout.png",
+              "public/enemy-tank.png",
+              "public/enemy-turret.png",
+              "public/player.png",
+              "src/services/assets.ts"
+            ],
+            "branch": "task/task-1763744187225-d8b28c",
+            "targetCommitHash": "476d29b8830da3b0181a8a79cb4b26536d470438",
+            "worktreePath": "C:/workspaces/Nebula-Striker/.worktrees/task-1763744187225-d8b28c",
+            "timestamp": 1763746137512,
+            "sortOrder": 0,
+            "lane": 5,
+            "branchColor": "#b84fe8",
+            "index": 11
+          },
+          {
+            "type": "staged",
+            "label": "ステージ済み [task/task-1763744187225-d8b28c] (1)",
+            "files": [
+              "rc/components/GameCanvas.tsx"
+            ],
+            "branch": "task/task-1763744187225-d8b28c",
+            "targetCommitHash": "476d29b8830da3b0181a8a79cb4b26536d470438",
+            "worktreePath": "C:/workspaces/Nebula-Striker/.worktrees/task-1763744187225-d8b28c",
+            "timestamp": 1763746137512,
+            "sortOrder": 1,
+            "lane": 5,
+            "branchColor": "#b84fe8",
+            "index": 12
+          }
+        ],
+        "isDefaultWorktree": false,
+        "renderMode": "node",
+        "shouldHide": false,
+        "tagLabel": "task/task-1763744187225-d8b28c",
+        "taskId": "task-1763744187225-d8b28c",
+        "taskStatus": "working",
+        "taskStatusLabel": "作業中",
+        "taskName": "CodexCLI4: 今プロジェクトフォルダに指定しているディレクトリに格納されているゲームについてグラフィックの向上をしたい\n\n以下のアドバイスをもらったので自機体とか敵の画像をつくってグラフィックの向上を実行して\n\nグラフィックの画像化について\nこのプロジェクトは現在、Canvas の描画関数で敵や自機を図形で描画しています。画像ファイルを使用するには、以下の手順が必要です。\n\n1. 画像アセットの準備\npublic/ フォルダを作成し、画像ファイルを配置します：\n\n2. 画像読み込み用のユーティリティを作成\n3. GameCanvasで画像を使用\nGameCanvas.tsx の描画関数を変更：\n\n4. 推奨画像形式\n形式: PNG（透明背景対応）\nサイズ: 敵は 40-180px、自機は 40px × 20px 程度\n最適化: TinyPNG などで圧縮推奨\n5. Vite設定確認\nvite.config.ts で public フォルダが自動的に静的ファイルとして配信されます。\n\nこのアプローチにより、既存のゲームロジックを保つながらビジュアルを大幅に改善できます！",
+        "tooltip": "タスク: CodexCLI4: 今プロジェクトフォルダに指定しているディレクトリに格納されているゲームについてグラフィックの向上をしたい\n\n以下のアドバイスをもらったので自機体とか敵の画像をつくってグラフィックの向上を実行して\n\nグラフィックの画像化について\nこのプロジェクトは現在、Canvas の描画関数で敵や自機を図形で描画しています。画像ファイルを使用するには、以下の手順が必要です。\n\n1. 画像アセットの準備\npublic/ フォルダを作成し、画像ファイルを配置します：\n\n2. 画像読み込み用のユーティリティを作成\n3. GameCanvasで画像を使用\nGameCanvas.tsx の描画関数を変更：\n\n4. 推奨画像形式\n形式: PNG（透明背景対応）\nサイズ: 敵は 40-180px、自機は 40px × 20px 程度\n最適化: TinyPNG などで圧縮推奨\n5. Vite設定確認\nvite.config.ts で public フォルダが自動的に静的ファイルとして配信されます。\n\nこのアプローチにより、既存のゲームロジックを保つながらビジュアルを大幅に改善できます！\nステータス: 作業中\nID: task-1763744187225-d8b28c\nBranch: task/task-1763744187225-d8b28c\nWorktree: C:/workspaces/Nebula-Striker/.worktrees/task-1763744187225-d8b28c",
+        "branchColor": "#b84fe8",
+        "index": 16
+      },
+      {
+        "type": "commit",
+        "label": "chore: sync project state",
+        "commit": {
+          "hash": "476d29b8830da3b0181a8a79cb4b26536d470438",
+          "subject": "chore: sync project state",
+          "author": "yuya.fujita",
+          "timestamp": 1763743545,
+          "parents": [
+            "674be084324003b18f9edfe0e113a50ae7b1b5ef"
+          ],
+          "parent": "674be084324003b18f9edfe0e113a50ae7b1b5ef",
+          "refs": "HEAD -> task/task-1763744180231-0465fe, task/task-1763744187225-d8b28c, task/task-1763744184939-55f605, task/task-1763744182659-3613cb",
+          "branches": [
+            "HEAD -> task/task-1763744180231-0465fe",
+            "task/task-1763744187225-d8b28c",
+            "task/task-1763744184939-55f605",
+            "task/task-1763744182659-3613cb",
+            "task/task-1763744189523-763818",
+            "main",
+            "task/task-1763744180231-0465fe"
+          ]
+        },
+        "commitHash": "476d29b8830da3b0181a8a79cb4b26536d470438",
+        "lane": 0,
+        "parentLinks": [
+          {
+            "hash": "674be084324003b18f9edfe0e113a50ae7b1b5ef",
+            "lane": 0
+          }
+        ],
+        "primaryBranchName": "main",
+        "branchColor": "#4f85e8",
+        "branchTags": [],
+        "worktrees": [
+          {
+            "path": "C:/workspaces/Nebula-Striker/.worktrees/task-1763744180231-0465fe",
+            "head": "476d29b8830da3b0181a8a79cb4b26536d470438",
+            "branch": "task/task-1763744180231-0465fe",
+            "isMerged": false,
+            "mergeCommitHash": null,
+            "status": {
+              "staged": [
+                {
+                  "path": "rc/components/GameCanvas.tsx",
+                  "originalPath": null,
+                  "status": "modified",
+                  "rawPath": "rc/components/GameCanvas.tsx",
+                  "timestamp": 1763746137393
+                }
+              ],
+              "unstaged": [],
+              "untracked": [
+                {
+                  "path": "public/sprites/enemy-boss.png",
+                  "status": "untracked",
+                  "rawPath": "public/sprites/enemy-boss.png",
+                  "timestamp": 1763746137393
+                },
+                {
+                  "path": "public/sprites/enemy-fighter.png",
+                  "status": "untracked",
+                  "rawPath": "public/sprites/enemy-fighter.png",
+                  "timestamp": 1763746137393
+                },
+                {
+                  "path": "public/sprites/enemy-scout.png",
+                  "status": "untracked",
+                  "rawPath": "public/sprites/enemy-scout.png",
+                  "timestamp": 1763746137393
+                },
+                {
+                  "path": "public/sprites/enemy-tank.png",
+                  "status": "untracked",
+                  "rawPath": "public/sprites/enemy-tank.png",
+                  "timestamp": 1763746137393
+                },
+                {
+                  "path": "public/sprites/enemy-turret.png",
+                  "status": "untracked",
+                  "rawPath": "public/sprites/enemy-turret.png",
+                  "timestamp": 1763746137393
+                },
+                {
+                  "path": "public/sprites/player.png",
+                  "status": "untracked",
+                  "rawPath": "public/sprites/player.png",
+                  "timestamp": 1763746137393
+                }
+              ],
+              "capturedAt": 1763746137393
+            },
+            "normalizedPath": "C:/workspaces/Nebula-Striker/.worktrees/task-1763744180231-0465fe",
+            "lane": 2
+          },
+          {
+            "path": "C:/workspaces/Nebula-Striker/.worktrees/task-1763744182659-3613cb",
+            "head": "476d29b8830da3b0181a8a79cb4b26536d470438",
+            "branch": "task/task-1763744182659-3613cb",
+            "isMerged": false,
+            "mergeCommitHash": null,
+            "status": {
+              "staged": [
+                {
+                  "path": "rc/components/GameCanvas.tsx",
+                  "originalPath": null,
+                  "status": "modified",
+                  "rawPath": "rc/components/GameCanvas.tsx",
+                  "timestamp": 1763746137458
+                }
+              ],
+              "unstaged": [],
+              "untracked": [
+                {
+                  "path": ".kamui/tasks-state.json",
+                  "status": "untracked",
+                  "rawPath": ".kamui/tasks-state.json",
+                  "timestamp": 1763746137458
+                },
+                {
+                  "path": "public/enemy_boss.png",
+                  "status": "untracked",
+                  "rawPath": "public/enemy_boss.png",
+                  "timestamp": 1763746137458
+                },
+                {
+                  "path": "public/enemy_fighter.png",
+                  "status": "untracked",
+                  "rawPath": "public/enemy_fighter.png",
+                  "timestamp": 1763746137458
+                },
+                {
+                  "path": "public/enemy_scout.png",
+                  "status": "untracked",
+                  "rawPath": "public/enemy_scout.png",
+                  "timestamp": 1763746137458
+                },
+                {
+                  "path": "public/enemy_tank.png",
+                  "status": "untracked",
+                  "rawPath": "public/enemy_tank.png",
+                  "timestamp": 1763746137458
+                },
+                {
+                  "path": "public/enemy_turret.png",
+                  "status": "untracked",
+                  "rawPath": "public/enemy_turret.png",
+                  "timestamp": 1763746137458
+                },
+                {
+                  "path": "public/player.png",
+                  "status": "untracked",
+                  "rawPath": "public/player.png",
+                  "timestamp": 1763746137458
+                },
+                {
+                  "path": "src/services/imageLoader.ts",
+                  "status": "untracked",
+                  "rawPath": "src/services/imageLoader.ts",
+                  "timestamp": 1763746137458
+                }
+              ],
+              "capturedAt": 1763746137458
+            },
+            "normalizedPath": "C:/workspaces/Nebula-Striker/.worktrees/task-1763744182659-3613cb",
+            "lane": 3
+          },
+          {
+            "path": "C:/workspaces/Nebula-Striker/.worktrees/task-1763744184939-55f605",
+            "head": "476d29b8830da3b0181a8a79cb4b26536d470438",
+            "branch": "task/task-1763744184939-55f605",
+            "isMerged": false,
+            "mergeCommitHash": null,
+            "status": {
+              "staged": [
+                {
+                  "path": "rc/components/GameCanvas.tsx",
+                  "originalPath": null,
+                  "status": "modified",
+                  "rawPath": "rc/components/GameCanvas.tsx",
+                  "timestamp": 1763746137455
+                }
+              ],
+              "unstaged": [],
+              "untracked": [
+                {
+                  "path": "src/services/imageLoader.ts",
+                  "status": "untracked",
+                  "rawPath": "src/services/imageLoader.ts",
+                  "timestamp": 1763746137455
+                }
+              ],
+              "capturedAt": 1763746137455
+            },
+            "normalizedPath": "C:/workspaces/Nebula-Striker/.worktrees/task-1763744184939-55f605",
+            "lane": 4
+          },
+          {
+            "path": "C:/workspaces/Nebula-Striker/.worktrees/task-1763744187225-d8b28c",
+            "head": "476d29b8830da3b0181a8a79cb4b26536d470438",
+            "branch": "task/task-1763744187225-d8b28c",
+            "isMerged": false,
+            "mergeCommitHash": null,
+            "status": {
+              "staged": [
+                {
+                  "path": "rc/components/GameCanvas.tsx",
+                  "originalPath": null,
+                  "status": "modified",
+                  "rawPath": "rc/components/GameCanvas.tsx",
+                  "timestamp": 1763746137512
+                }
+              ],
+              "unstaged": [],
+              "untracked": [
+                {
+                  "path": "public/enemy-boss.png",
+                  "status": "untracked",
+                  "rawPath": "public/enemy-boss.png",
+                  "timestamp": 1763746137512
+                },
+                {
+                  "path": "public/enemy-fighter.png",
+                  "status": "untracked",
+                  "rawPath": "public/enemy-fighter.png",
+                  "timestamp": 1763746137512
+                },
+                {
+                  "path": "public/enemy-scout.png",
+                  "status": "untracked",
+                  "rawPath": "public/enemy-scout.png",
+                  "timestamp": 1763746137512
+                },
+                {
+                  "path": "public/enemy-tank.png",
+                  "status": "untracked",
+                  "rawPath": "public/enemy-tank.png",
+                  "timestamp": 1763746137512
+                },
+                {
+                  "path": "public/enemy-turret.png",
+                  "status": "untracked",
+                  "rawPath": "public/enemy-turret.png",
+                  "timestamp": 1763746137512
+                },
+                {
+                  "path": "public/player.png",
+                  "status": "untracked",
+                  "rawPath": "public/player.png",
+                  "timestamp": 1763746137512
+                },
+                {
+                  "path": "src/services/assets.ts",
+                  "status": "untracked",
+                  "rawPath": "src/services/assets.ts",
+                  "timestamp": 1763746137512
+                }
+              ],
+              "capturedAt": 1763746137512
+            },
+            "normalizedPath": "C:/workspaces/Nebula-Striker/.worktrees/task-1763744187225-d8b28c",
+            "lane": 5
+          }
+        ],
+        "index": 17
+      },
+      {
+        "type": "commit",
+        "label": "feat: Initialize Nebula Striker AI project",
+        "commit": {
+          "hash": "674be084324003b18f9edfe0e113a50ae7b1b5ef",
+          "subject": "feat: Initialize Nebula Striker AI project",
+          "author": "yuya-fujita-1201",
+          "timestamp": 1763721211,
+          "parents": [
+            "7ebceac4c3cac7dc0978ede66444de18c7b24ea3"
+          ],
+          "parent": "7ebceac4c3cac7dc0978ede66444de18c7b24ea3",
+          "refs": "",
+          "branches": [
+            "task/task-1763744189523-763818",
+            "main",
+            "task/task-1763744180231-0465fe",
+            "task/task-1763744182659-3613cb",
+            "task/task-1763744184939-55f605",
+            "task/task-1763744187225-d8b28c"
+          ]
+        },
+        "commitHash": "674be084324003b18f9edfe0e113a50ae7b1b5ef",
+        "lane": 0,
+        "parentLinks": [
+          {
+            "hash": "7ebceac4c3cac7dc0978ede66444de18c7b24ea3",
+            "lane": 0
+          }
+        ],
+        "primaryBranchName": "main",
+        "branchColor": "#4f85e8",
+        "branchTags": [],
+        "index": 18
+      },
+      {
+        "type": "commit",
+        "label": "Initial commit",
+        "commit": {
+          "hash": "7ebceac4c3cac7dc0978ede66444de18c7b24ea3",
+          "subject": "Initial commit",
+          "author": "yuya-fujita-1201",
+          "timestamp": 1763706275,
+          "parents": [],
+          "parent": null,
+          "refs": "",
+          "branches": [
+            "task/task-1763744189523-763818",
+            "main",
+            "task/task-1763744180231-0465fe",
+            "task/task-1763744182659-3613cb",
+            "task/task-1763744184939-55f605",
+            "task/task-1763744187225-d8b28c"
+          ]
+        },
+        "commitHash": "7ebceac4c3cac7dc0978ede66444de18c7b24ea3",
+        "lane": 0,
+        "parentLinks": [],
+        "primaryBranchName": "main",
+        "branchColor": "#4f85e8",
+        "branchTags": [],
+        "index": 19
+      },
+      {
+        "type": "empty",
+        "label": "初期状態 (初回コミット以前)",
+        "files": [],
+        "marker": "pre-history",
+        "index": 20
+      }
+    ]
+  },
+  "projectRoot": "C:/workspaces/Nebula-Striker",
+  "savedAt": 1763746157320
+}
